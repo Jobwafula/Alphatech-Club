@@ -6,16 +6,21 @@ import React from 'react';
 
 const HomePage: React.FC = () => {
   return (
-    <main className="container mx-auto">
+    <main className="">
       <Navbar />
       {/* Hero Section */}
       <section className="hero bg-cover bg-center h-screen text-white" style={{backgroundImage:'url(/nairobi-garage.png)'}} >
+      <Button className='bg-blue-600 right-8 absolute mt-2 border py-3 px-6 rounded font-bold'>Sign In</Button>
         <div className="flex flex-col items-center justify-center h-full bg-black bg-opacity-50">
           <h1 className="text-6xl font-bold mb-4">Welcome to Alphatech Club</h1>
           <p className="text-xl mb-8">Empowering the future of telecommunications and IT</p>
+          {/* buttons */}
+          <div className='flex gap-4'>
+          <Button className='bg-transparent border py-3 px-6 rounded font-bold'>Join Us</Button>
           <Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded">
             Learn More
           </Button>
+          </div>
         </div>
       </section>
 
