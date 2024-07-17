@@ -2,6 +2,7 @@
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 import React from 'react';
 
 const HomePage: React.FC = () => {
@@ -16,7 +17,8 @@ const HomePage: React.FC = () => {
           <p className="text-xl mb-8">Empowering the future of telecommunications and IT</p>
           {/* buttons */}
           <div className='flex gap-4'>
-          <Button className='bg-transparent border py-3 px-6 rounded font-bold'>Join Us</Button>
+            
+          <Link  href='/register' className='bg-transparent border py-2 px-6 rounded font-bold'>Join Us</Link>
           <Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded">
             Learn More
           </Button>
